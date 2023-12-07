@@ -65,6 +65,7 @@ Before anything else, use Mason extension to install autocomplete for whatever l
 
 # to install go, python, rust autocomplete
 :MasonInstall gopls
+:MasonInstall goimports
 :MasonInstall pylint
 :MasonInstall rust-analyzer
 ```
