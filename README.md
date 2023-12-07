@@ -57,6 +57,19 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git $env:USERPROFILE\AppDat
 
 ### Post Installation
 
+
+Before anything else, use Mason extension to install autocomplete for whatever languages you plan to use:
+```
+# to list options
+:Mason
+
+# to install go, python, rust autocomplete
+:MasonInstall gopls
+:MasonInstall pylint
+:MasonInstall rust-analyzer
+```
+
+
 Start Neovim
 
 ```sh
