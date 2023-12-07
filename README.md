@@ -2,6 +2,31 @@
 
 https://github.com/kdheepak/kickstart.nvim/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
 
+
+## bturley Custom Install Steps 
+
+Install what's in this repo
+```
+git clone https://github.com/bturley2/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+
+Before anything else, use Mason extension to install autocomplete for whatever languages you plan to use:
+```
+# to list options
+:Mason
+
+# to install go, python, rust autocomplete
+:MasonInstall gopls
+:MasonInstall goimports
+:MasonInstall pylint
+:MasonInstall rust-analyzer
+```
+
+
+The everything else in this README file is all generated from the base kickstart project.
+
+
 ### Introduction
 
 A starting point for Neovim that is:
@@ -57,18 +82,6 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git $env:USERPROFILE\AppDat
 
 ### Post Installation
 
-
-Before anything else, use Mason extension to install autocomplete for whatever languages you plan to use:
-```
-# to list options
-:Mason
-
-# to install go, python, rust autocomplete
-:MasonInstall gopls
-:MasonInstall goimports
-:MasonInstall pylint
-:MasonInstall rust-analyzer
-```
 
 
 Start Neovim
