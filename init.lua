@@ -175,14 +175,28 @@ require('lazy').setup({
     event = {"CmdlineEnter"},
     ft = {"go", 'gomod'},
     build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
-  }, 
+  },
 
+  -- List of currently installed color schemes:  
+  -- (Whichever one has the vim.cmd.colorscheme active will be the one that shows.)
   {
-    -- Theme inspired by Atom
     'navarasu/onedark.nvim',
+    name = "onedark",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      -- vim.cmd.colorscheme "onedark"
+    end,
+  },
+
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      -- vim.cmd.colorscheme "catppuccin-latte"        -- light mode
+      -- vim.cmd.colorscheme "catppuccin-frappe"       -- dark 1
+      vim.cmd.colorscheme "catppuccin-macchiato"    -- dark 2
+      -- vim.cmd.colorscheme "catppuccin-mocha"        -- dark 3
     end,
   },
 
@@ -193,7 +207,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'catppuccin-macchiato',
         component_separators = '|',
         section_separators = '',
       },
