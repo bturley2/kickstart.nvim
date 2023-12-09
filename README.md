@@ -6,7 +6,7 @@ Default font is set to `catppuccin-macchiato` theme, but you're welcome to chang
 
 The [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager is already installed to make future plugins easier to add.
 
-## bturley Custom Install Steps 
+## Custom Install Steps 
 
 Install what's in this repo with:
 ```
