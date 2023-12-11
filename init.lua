@@ -179,26 +179,43 @@ require('lazy').setup({
 
   -- List of currently installed color schemes:  
   -- (Whichever one has the vim.cmd.colorscheme active will be the one that shows.)
+  -- {
+  --   'navarasu/onedark.nvim',
+  --   name = "onedark",
+  --   priority = 1000,
+  --   config = function()
+  --     -- vim.cmd.colorscheme "onedark"
+  --   end,
+  -- },
+
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   config = function()
+  --     -- vim.cmd.colorscheme "catppuccin-latte"        -- light mode
+  --     -- vim.cmd.colorscheme "catppuccin-frappe"       -- dark 1
+  --     vim.cmd.colorscheme "catppuccin-macchiato"    -- dark 2
+  --     -- vim.cmd.colorscheme "catppuccin-mocha"        -- dark 3
+  --   end,
+  -- },
+
   {
-    'navarasu/onedark.nvim',
-    name = "onedark",
-    priority = 1000,
-    config = function()
-      -- vim.cmd.colorscheme "onedark"
+    "ellisonleao/gruvbox.nvim", priority = 1000, config = function()
+      vim.o.background = "light"
+      vim.cmd.colorscheme "gruvbox"
     end,
   },
 
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    config = function()
-      -- vim.cmd.colorscheme "catppuccin-latte"        -- light mode
-      -- vim.cmd.colorscheme "catppuccin-frappe"       -- dark 1
-      vim.cmd.colorscheme "catppuccin-macchiato"    -- dark 2
-      -- vim.cmd.colorscheme "catppuccin-mocha"        -- dark 3
-    end,
-  },
+  -- {
+  --   'shaunsingh/solarized.nvim',
+  --   name = "solarized",
+  --   priority = 1000,
+  --   config = function()
+  --     vim.o.background = "light"
+  --     vim.cmd.colorscheme "solarized"
+  --   end,
+  -- },
 
   {
     -- Set lualine as statusline
@@ -207,7 +224,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'catppuccin-macchiato',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
