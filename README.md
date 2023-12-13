@@ -19,8 +19,8 @@ Before anything else, use Mason extension to install autocomplete for whatever l
 # to list options
 :Mason
 
-# some examples you may wish to install for go, python, or rust autocomplete
-:MasonInstall gopls goimports pylint rust-analyzer
+# some examples you may wish to install for go, python, c++, or rust autocomplete
+:MasonInstall gopls goimports pylint rust-analyzer cpptools cpplint
 ```
 
 ## Tips
