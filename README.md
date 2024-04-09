@@ -3,9 +3,6 @@
 This repo is based off of the [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) repo. It already contains a number of critical basic plugins such as treesitter for basic linting, Mason to quickly install language support, fzf and more.
 
 Default font is set to `catppuccin-macchiato` theme, but you're welcome to change it. All configurations are in the `~/.config/nvim/init.lua` file.
-
-The [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager is already installed to make future plugins easier to add.
-
 ## Custom Install Steps 
 
 Install what's in this repo with:
@@ -13,8 +10,7 @@ Install what's in this repo with:
 git clone https://github.com/bturley2/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
-
-Before anything else, use Mason extension to install autocomplete for whatever languages you plan to use:
+## Before anything else, use Mason extension to install autocomplete for whatever languages you plan to use:
 ```
 # to list options
 :Mason
@@ -33,7 +29,6 @@ gcc
 # in visual mode
 gc
 ```
-
 
 Or [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) which provides autocomplete. Detailed keybindings for this can be found here: https://linovox.com/install-and-use-nvim-cmp/ 
 With the key ones being:
