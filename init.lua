@@ -223,7 +223,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   group = format_sync_grp,
 })
 
-- [[ Configure and install plugins ]]
+-- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
 --    :Lazy
